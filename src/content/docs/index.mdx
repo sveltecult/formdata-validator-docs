@@ -1,0 +1,36 @@
+---
+title: FormData Validator
+description: Get started building your docs site with Starlight.
+template: splash
+hero:
+  tagline: A versatile form data validation library offering a fluent API to ensure data integrity and consistency in web applications.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Get Started
+      link: /guides/introduction/
+      icon: right-arrow
+      variant: primary
+    - text: View on Github
+      link: https://github.com/sveltecult/packages/tree/formdata-validator
+      icon: github
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Features
+
+<CardGrid stagger>
+	<Card title="Fluent API" icon="translate">
+		Provides a fluent API making it easy to chain and apply multiple rules to your data. You can write expressive and readable code, such as `Rule.required().min(3).max(10)`.
+	</Card>
+	<Card title="Multiple types" icon="approve-check-circle">
+		Can validate different types of data, such as boolean, string, number, file, and date.
+	</Card>
+	<Card title="Customizable validation rules" icon="setting">
+		You can create your own validation rules or use the built-in ones, depending on your needs. You can also customize the error messages and the validation logic for each rule.
+	</Card>
+	<Card title="Framework agnostic" icon="rocket">
+		Works with any web framework that accepts FormData and SSR, so you don’t have to worry about compatibility issues.
+	</Card>
+</CardGrid>
